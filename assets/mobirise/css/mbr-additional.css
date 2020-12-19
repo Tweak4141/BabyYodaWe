@@ -731,7 +731,7 @@ a {
   transition: color 0.6s;
 }
 .cid-sbMUOgRDGV {
-  background-color: #1d1e28;
+  background-image: url("../../../assets/images/star-wars-fantasy-art-light-sabers-darth-yoda-1920x1080-wallpaper-1920x1080.jpg");
 }
 .cid-siUeA97OLX {
   padding-top: 5rem;
@@ -749,11 +749,15 @@ a {
   transition: all 0.3s;
   border-radius: 4px;
   padding: 1rem;
-  background: #ad91ff;
+  background: #473c4e;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
+}
+.cid-siUeA97OLX .card-title,
+.cid-siUeA97OLX .card-box {
+  color: #0e0d0d;
 }
 .cid-sbN1dGRUre {
   padding-top: 2rem;
