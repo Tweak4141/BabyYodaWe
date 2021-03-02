@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.textbox {
+  width: 25vmax;
+}
+
+@media screen and (max-width: 600px) {
+  .etwclient {
+    width: 55vmax !important;
+    margin-top: 3%;
+  }
+  .textbox {
+    width: 40vmax;
+  }
+  #particles-js {
+    background-color: rgb(34, 34, 34);
+    background-repeat: repeat;
+    height: 115vmax !important;
+  }
+  .navbar-logo {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .navbar-logo {
+    width: 10% !important;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .logo {
+    display: none;
+  }
+  .menupreview {
+    display: none;
+  }
+}
+
+#particles-js {
+  background-color: rgb(34, 34, 34);
+  background-repeat: repeat;
+  height: 100%;
+}
+
+.txtbgr {
+  margin: 24px;
+}
+
+.etwclient {
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgb(51, 51, 51);
+  width: 45vmax;
+  margin-top: 15%;
+  margin-left: 6%;
+  margin-right: 1% !important;
+  position: absolute;
+  color: white;
+}
+
+.changelog {
+  border-radius: 15px;
+  padding: 20px;
+  width: 28vmax;
+  margin-top: 4%;
+  margin-left: 63%;
+  margin-right: auto;
+  position: absolute;
+  color: white;
+}
+
+.logo {
+  position: absolute;
+  margin-top: 18%;
+  margin-left: 36%;
+  width: 10%;
+  height: auto;
+  background-color: rgb(51, 51, 51);
+  border-radius: 50%;
+}
+.logosize {
+  width: 150%;
+  height: auto;
+  border-radius: 15px;
+  background-color: rgb(51, 51, 51) !important;
+  color: white;
+}
+
+.button {
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  border: 2px solid #4c7aaf;
+  margin-bottom: 2%;
+}
+
+.button:hover {
+  background-color: #4c7aaf;
+  color: white;
+}
+
+.socialbuttons form {
+  float: left;
+  margin-right: 15px;
+}
+.socialbuttons {
+  height: 50px;
+}
+
+.twitter {
+  height: 100%;
+  width: 120px;
+  line-height: 40px;
+}
+.discord {
+  height: 100%;
+  width: 120px;
+  line-height: 40px;
+}
+.download {
+  height: 100%;
+  width: 120px;
+  line-height: 40px;
+  display: table;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  margin-bottom: 2%;
+  font-size: 16px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/*----------multi-level-accordian-menu------------*/
+.navbar-logo {
+  color: #fff;
+  width: 3%;
+  height: auto;
+}
+.navbar-mainbg {
+  background-color: #292929;
+  padding: 0px;
+  position: absolute;
+}
+#navbarSupportedContent {
+  overflow: hidden;
+  position: relative;
+}
+#navbarSupportedContent ul {
+  padding: 0px;
+  margin: 0px;
+}
+#navbarSupportedContent ul li a i {
+  margin-right: 10px;
+}
+#navbarSupportedContent li {
+  list-style-type: none;
+  float: left;
+}
+#navbarSupportedContent ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 10px 20px;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+}
+#navbarSupportedContent > ul > li.active > a {
+  color: #ffffff;
+  background-color: transparent;
+  transition: all 0.7s;
+}
+#navbarSupportedContent a:not(:only-child):after {
+  content: "\f105";
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 14px;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  transition: 0.5s;
+}
+#navbarSupportedContent .active > a:not(:only-child):after {
+  transform: rotate(90deg);
+}
+.hori-selector {
+  position: absolute;
+  height: 5%;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background-color: #4c7aaf;
+  border-radius: 15px;
+}
+.hori-selector .right,
+.hori-selector .left {
+  position: absolute;
+  height: 50px;
+  background-color: #fff;
+}
+.hori-selector .right {
+  right: -25px;
+}
+.hori-selector .left {
+  left: -25px;
+}
+.hori-selector .right:before,
+.hori-selector .left:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #292929;
+}
+.hori-selector .right:before {
+  bottom: 0;
+  right: -25px;
+}
+.hori-selector .left:before {
+  bottom: 0;
+  left: -25px;
+}
+
+@media (max-width: 991px) {
+  #navbarSupportedContent ul li a {
+    padding: 12px 30px;
+  }
+  .hori-selector {
+    margin-top: 0px;
+    margin-left: 10px;
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .hori-selector .left,
+  .hori-selector .right {
+    right: 10px;
+  }
+  .hori-selector .left {
+    top: -25px;
+    left: auto;
+  }
+  .hori-selector .right {
+    bottom: -25px;
+  }
+  .hori-selector .left:before {
+    left: -25px;
+    top: -25px;
+  }
+  .hori-selector .right:before {
+    bottom: -25px;
+    left: -25px;
+  }
+}

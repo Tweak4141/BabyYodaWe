@@ -1,0 +1,70 @@
+{
+  "particles":{
+    "number":{
+      "value": 90
+    },
+    "color":{
+      "value":"#ccc"
+    },
+    "shape":{
+      "type":"circle",
+      "stroke":{
+        "width":1,
+        "color":"#ccc"
+      },
+      "image":{
+        "src":"https://lh3.googleusercontent.com/proxy/kcH-kLxwgs80nD0yeYe8R_-k1ekzgga82jWUkNfDrEuztLJdcua4_fWMJ2d3CAru4HagfOWTZ_uLj35tb2ZmAtzQ1HyjXUiSOM6d9Fgm3FiR8_jfIJO7pF9-3iI"
+      }
+    },
+    "opacity":{
+      "value":0.5,
+      "random":true,
+      "anim":{
+        "enable":false,
+        "speed":1
+      }
+    },
+    "size":{
+      "value": 5,
+      "random":false,
+      "anim":{
+        "enable": false,
+        "speed":30
+      }
+    },
+    "line_linked":{
+      "enable": true,
+      "distance": 150,
+      "color":"#ccc",
+      "width":1
+    },
+    "move":{
+      "enable":true,
+      "speed":2,
+      "direction":"none",
+      "straight":false
+    }
+  },
+  "interactivity":{
+    "events":{
+      "onhover":{
+        "enable":true,
+        "mode":"repulse"
+      },
+      "onclick":{
+        "enable": true,
+        "mode":"push"
+      }
+    },
+    "modes":{
+      "repulse":{
+        "distance": 100,
+        "duration": 1
+      },
+      "bubble":{
+        "distance":100,
+        "size":10
+      }
+    }
+  }
+}
