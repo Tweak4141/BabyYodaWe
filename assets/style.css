@@ -51,8 +51,9 @@ body {
 
 #particles-js {
   background-color: rgb(34, 34, 34);
-  position : absolute; width:100%;
-  height: max-content; z-index:-1;
+  position : absolute; 
+  width:100%;
+  z-index:-1;
 }
 
 
