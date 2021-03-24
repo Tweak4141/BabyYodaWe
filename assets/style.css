@@ -61,10 +61,10 @@ body {
   padding: 20px;
   background-color: rgb(51, 51, 51);
   width: 45vmax;
-  margin-top: 15%;
+  margin-top: 5%;
   margin-left: 6%;
   margin-right: 1% !important;
-  position: relative;
+  position: absolute;
   color: white;
   word-wrap: break-word;  
 }
