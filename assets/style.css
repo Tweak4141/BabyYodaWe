@@ -5,17 +5,16 @@ body {
 }
 
 .textbox {
+  height: 20vmax;
   width: 25vmax;
 }
 
 @media screen and (max-width: 600px) {
-  .etwclient {
-    width: 55vmax !important;
+  .babyyoda {
+    height: 10vmax !important;
     margin-top: 3%;
   }
-  .textbox {
-    width: 40vmax;
-  }
+
   #particles-js {
     background-color: rgb(34, 34, 34);
     background-repeat: repeat;
@@ -33,8 +32,17 @@ body {
   }
 }
 @media screen and (max-width: 1300px) {
+  .card {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+  }
   .logo {
     display: none;
+  }
+  .babyyoda {
+    height: 60vmax !important;
+    margin-top: 3%;
   }
   .menupreview {
     display: none;
@@ -43,15 +51,12 @@ body {
 
 #particles-js {
   background-color: rgb(34, 34, 34);
-  background-repeat: repeat;
-  height: 100%;
+  position : absolute; width:100%;
+  height: max-content; z-index:-1;
 }
 
-.txtbgr {
-  margin: 24px;
-}
 
-.etwclient {
+.babyyoda {
   border-radius: 15px;
   padding: 20px;
   background-color: rgb(51, 51, 51);
@@ -59,37 +64,25 @@ body {
   margin-top: 15%;
   margin-left: 6%;
   margin-right: 1% !important;
-  position: absolute;
+  position: relative;
   color: white;
-}
-
-.changelog {
-  border-radius: 15px;
-  padding: 20px;
-  width: 28vmax;
-  margin-top: 4%;
-  margin-left: 63%;
-  margin-right: auto;
-  position: absolute;
-  color: white;
+  word-wrap: break-word;  
 }
 
 .logo {
   position: absolute;
-  margin-top: 18%;
-  margin-left: 36%;
-  width: 10%;
+  margin-left: 65%;
+  margin-top: -15%;
+  vertical-align: middle;
+  float: right;
+  width: 20% !important;
   height: auto;
   background-color: rgb(51, 51, 51);
-  border-radius: 50%;
+  border-radius: 50% !important;
 }
-.logosize {
-  width: 150%;
-  height: auto;
-  border-radius: 15px;
-  background-color: rgb(51, 51, 51) !important;
-  color: white;
-}
+
+
+
 
 .button {
   text-decoration: none;
@@ -107,6 +100,7 @@ body {
 }
 
 .socialbuttons form {
+  margin-top: 10%;
   float: left;
   margin-right: 15px;
 }
@@ -265,4 +259,130 @@ body {
     bottom: -25px;
     left: -25px;
   }
+}
+
+.con1 {
+  color: white;
+  float:left !important; 
+}
+
+.header {
+  color: white;
+  position: absolute;
+  text-align: center;
+	top: -80%;
+  margin-top: 40%;
+  margin-left: 140%;
+}
+
+.transition { transition: .3s cubic-bezier(.3, 0, 0, 1.3) }
+.card {
+    background-color: rgb(51, 51, 51) !important;
+    bottom: 0;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+    height: 350px;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    border: none;
+}
+.card:hover {
+    height: 500px;
+    width: 300px;
+}
+.card:hover .cta-container {
+    display: inline;
+    margin-top: 380px;
+}
+.card:hover .card_circle {
+    background-size: cover;
+    border-radius: 0;
+    margin-top: -130px;
+}
+.card:hover h2 {
+    background: #4c7aaf;
+    color: #fff;
+    margin-top: 150px;
+    padding: 5px;
+}
+.card:hover h2 small { color: #fff }
+.card:hover p { margin-top: 300px }
+.card_circle {
+    background: url('https://images-ext-1.discordapp.net/external/j9fqYg3V0F0Oh7w5126QR721IJC2vwuLzqJ_uNpxq70/https/tweak-bot.tk/assets/tweak.png?width=676&height=676') no-repeat center bottom;
+    background-color: #4c7aaf;
+    background-size: cover;
+    border-radius: 50%;
+    height: 400px;
+    margin-left: -75px;
+    margin-top: -280px;
+    position: absolute;
+    width: 450px;
+}
+.card h2 {
+    color: #4c7aaf;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    margin-top: 150px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+.card p {
+  padding-right: 10px;
+  padding-left: 10px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    margin-top: 200px;
+    position: absolute;
+    text-align: center;
+    z-index: 9999;
+}
+.cta-container {
+    display: none;
+    margin-top: 320px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+.cta {
+    -moz-border-radius: 2px;
+    -moz-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -webkit-border-radius: 2px;
+    -webkit-transition: 0.2s ease-out;
+    background-clip: padding-box;
+    border: 2px solid #4c7aaf;
+    border-radius: 2px;
+    color: #4c7aaf;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    height: 36px;
+    letter-spacing: 0.5px;
+    line-height: 36px;
+    margin-bottom: 15px;
+    padding: 0 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s ease-out;
+    margin-top: 20%;
+}
+.cta:hover {
+    background-color: #4c7aaf;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #fff;
+    -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
