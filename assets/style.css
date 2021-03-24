@@ -283,7 +283,7 @@ body {
     box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
   -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
-    height: 350px;
+    height: 360px;
     margin: auto;
     overflow: hidden;
     position: absolute;
@@ -292,98 +292,131 @@ body {
     width: 300px;
     border: none;
 }
-.card:hover {
-    height: 500px;
-    width: 300px;
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+    background: #eee !important;
 }
-.card:hover .cta-container {
-    display: inline;
-    margin-top: 380px;
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
 }
-.card:hover .card_circle {
-    background-size: cover;
-    border-radius: 0;
-    margin-top: -130px;
-}
-.card:hover h2 {
-    background: #4c7aaf;
+
+.btn-primary {
     color: #fff;
-    margin-top: 150px;
-    padding: 5px;
+    background-color: #007b5e;
+    border-color: #007b5e;
 }
-.card:hover h2 small { color: #fff }
-.card:hover p { margin-top: 300px }
-.card_circle {
-    background: url('https://images-ext-1.discordapp.net/external/j9fqYg3V0F0Oh7w5126QR721IJC2vwuLzqJ_uNpxq70/https/tweak-bot.tk/assets/tweak.png?width=676&height=676') no-repeat center bottom;
-    background-color: #4c7aaf;
-    background-size: cover;
-    border-radius: 50%;
-    height: 400px;
-    margin-left: -75px;
-    margin-top: -280px;
-    position: absolute;
-    width: 450px;
+
+section {
+    padding: 60px 0;
 }
-.card h2 {
-    color: #4c7aaf;
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    font-weight: 200;
-    margin-top: 150px;
-    position: absolute;
+
+section .section-title {
     text-align: center;
-    width: 100%;
-    z-index: 9999;
-}
-.card p {
-  padding-right: 10px;
-  padding-left: 10px;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-size: 100%;
-    font-weight: normal;
-    margin-top: 200px;
-    position: absolute;
-    text-align: center;
-    z-index: 9999;
-}
-.cta-container {
-    display: none;
-    margin-top: 320px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    z-index: 9999;
-}
-.cta {
-    -moz-border-radius: 2px;
-    -moz-transition: 0.2s ease-out;
-    -ms-transition: 0.2s ease-out;
-    -o-transition: 0.2s ease-out;
-    -webkit-border-radius: 2px;
-    -webkit-transition: 0.2s ease-out;
-    background-clip: padding-box;
-    border: 2px solid #4c7aaf;
-    border-radius: 2px;
-    color: #4c7aaf;
-    display: inline-block;
-    font-family: 'Raleway', sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    height: 36px;
-    letter-spacing: 0.5px;
-    line-height: 36px;
-    margin-bottom: 15px;
-    padding: 0 2rem;
-    text-decoration: none;
+    color: #007b5e;
+    margin-bottom: 50px;
     text-transform: uppercase;
-    transition: 0.2s ease-out;
-    margin-top: 20%;
 }
-.cta:hover {
-    background-color: #4c7aaf;
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: #fff;
-    -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
 }
