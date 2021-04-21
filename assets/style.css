@@ -308,8 +308,8 @@ body {
 
 .btn-primary {
     color: #fff;
-    background-color: #007b5e;
-    border-color: #007b5e;
+    background-color: #fcfcfc;
+    border-color: #fcfcfc;
 }
 
 section {
@@ -318,7 +318,7 @@ section {
 
 section .section-title {
     text-align: center;
-    color: #007b5e;
+    color: #fcfcfc;
     margin-bottom: 50px;
     text-transform: uppercase;
 }
